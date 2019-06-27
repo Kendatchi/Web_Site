@@ -1,0 +1,37 @@
+$topnav-background-color: #222;
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    top: 54px;
+    left: 0px;
+  }
+}
+@media print {
+  .sidebar {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .header-fields {
+    display: none;
+  }
+}
+
+.collapsed {
+  width: 60px;
+  span {
+    display: none;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 20px 20px;
+  font-size: 20px;
+  &:hover,
+  &.active {
+    background: white;
+    color: #333;
+  }
+}

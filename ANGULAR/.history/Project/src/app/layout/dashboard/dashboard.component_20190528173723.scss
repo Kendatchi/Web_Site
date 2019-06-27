@@ -1,0 +1,15 @@
+.test {
+  background-color: red;
+}
+
+@media only screen and (min-width: 1024px) {
+  .colWeb {
+    margin: 5rem;
+  }
+}
+
+@media (max-width: 600x) {
+  .colMob {
+    margin: 0rem;
+  }
+}

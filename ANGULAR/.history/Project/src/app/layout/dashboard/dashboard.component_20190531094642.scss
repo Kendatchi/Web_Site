@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1024px) {
+  .colResp {
+    margin: 5rem;
+  }
+}
+
+@media (max-width: 600x) {
+  .colResp {
+    margin: 0rem;
+  }
+}
+
+html,
+.background {
+  position: absolute;
+  display: block;
+}

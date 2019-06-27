@@ -1,0 +1,103 @@
+$topnav-background-color: #222;
+:host {
+  .navbar {
+    background-color: $topnav-background-color;
+    .navbar-brand {
+      color: #fff;
+    }
+    .nav-item > a {
+      color: #999;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+$topnav-background-color: #222;
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    top: 54px;
+    left: 0px;
+  }
+}
+@media print {
+  .sidebar {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .header-fields {
+    display: none;
+  }
+}
+
+.collapsed {
+  width: 60px;
+  span {
+    display: none;
+  }
+}
+
+.a,
+.lined_thick,
+.dotted_thick,
+.dashed_thick,
+.lined_thin,
+.dotted_thin,
+.dashed_thin,
+.active {
+  border: solid 7px #41403e;
+  align-self: center;
+  background: transparent;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  transition: all 0.5s ease;
+  color: #41403e;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.lined_thick {
+  border: solid 7px #41403e;
+}
+.dotted_thick {
+  border: dotted 5px #41403e;
+}
+.dashed_thick {
+  border: dashed 5px #41403e;
+}
+.lined_thin {
+  border: solid 2px #41403e;
+}
+.dotted_thin {
+  border: dotted 2px #41403e;
+}
+.dashed_thin {
+  border: dashed 2px #41403e;
+}
+
+:hover {
+  color: white;
+  background: green;
+  border: solid 7px #41403e;
+  align-self: center;
+  background: transparent;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  transition: all 0.5s ease;
+  color: #41403e;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+.active {
+  background: rgba(255, 99, 99, 0.651);
+  color: white;
+}

@@ -1,0 +1,64 @@
+<nav
+  class="navbar navbar-expand-lg navbar-dark py-lg-4 Sidebar"
+  id="mainNav"
+  [ngClass]="{ sidebarPushRight: isActive, collapsed: collapsed }"
+>
+  <a class="navbar-brand" href="#">Candice's Art</a>
+  <button class="navbar-toggler" type="button" (click)="toggleSidebar()">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="fa fa-bars text-muted" aria-hidden="true"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active px-lg-4">
+        <a
+          [routerLink]="['/board']"
+          [routerLinkActive]="['router-link']"
+          class="list-group-item"
+          ><span
+            ><i style="color:red" class="fa fa-fw fa-desktop"></i>Sur la
+            toile</span
+          ></a
+        >
+      </li>
+      <li class="nav-item px-lg-4">
+        <a
+          [routerLink]="['/board']"
+          [routerLinkActive]="['router-link']"
+          class="list-group-item"
+          ><span
+            ><i style="color:red" class="fa fa-fw fa-desktop"></i>Sur la
+            toile</span
+          ></a
+        >
+      </li>
+      <li class="nav-item px-lg-4">
+        <a
+          [routerLink]="['/board']"
+          [routerLinkActive]="['router-link']"
+          class="list-group-item"
+          ><i style="color:red" class="fa fa-fw fa-desktop"></i
+          ><span>Sortez couvert</span></a
+        >
+      </li>
+      <li class="nav-item px-lg-4">
+        <a
+          [routerLink]="['/board']"
+          [routerLinkActive]="['router-link']"
+          class="list-group-item"
+          ><i style="color:red" class="fa fa-fw fa-desktop"></i
+          ><span>Contactez-nous</span></a
+        >
+      </li>
+    </ul>
+  </div>
+  <!-- <div
+    class="toggle-button"
+    [ngClass]="{ collapsed: collapsed }"
+    (click)="toggleCollapsed()"
+  >
+    <i class="fa fa-fw fa-angle-double-{{ collapsed ? 'right' : 'left' }}"></i
+    >&nbsp;
+    <span>{{ "Reduire" | translate }}</span>
+  </div> -->
+</nav>

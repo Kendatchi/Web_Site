@@ -1,0 +1,267 @@
+/* ---- font ---- */
+
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #111;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font: normal 75% "Open Sans", Helvetica, sans-serif;
+}
+h1 {
+  font: normal 1200% "Fredericka the Great", Helvetica, sans-serif;
+  color: #176343;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 900px;
+  height: 200px;
+  margin-top: -80px;
+  margin-left: -450px;
+  line-height: 55%;
+  letter-spacing: -3px;
+  text-shadow: 5px 5px 25px rgba(255, 255, 255, 0.8),
+    -5px -5px 25px rgba(255, 255, 255, 0.8);
+  opacity: 0.65;
+}
+h1 span.mini {
+  color: #176343;
+  font: 100 30% "Fredericka the Great", Helvetica, sans-serif !important;
+  letter-spacing: 2px;
+  display: block;
+  text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.8),
+    -3px -3px 8px rgba(255, 255, 255, 0.8);
+  padding-top: 15px;
+}
+.copyright {
+  font: 700 25% "Open sans", Helvetica, sans-serif;
+  position: absolute;
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 15px 0px;
+  letter-spacing: 1px;
+  bottom: 0;
+}
+.copyright,
+.copyright a {
+  color: #fff;
+}
+.copyright a:hover {
+  color: #fdd250;
+  text-decoration: underline;
+}
+canvas {
+  display: block;
+  /* vertical-align: bottom; */
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #1b3d64;
+  background-image: url("../css/bg_body.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* ---- responsive section ---- */
+@media only screen and (max-width: 900px) {
+  h1 {
+    font: normal 900% "Fredericka the Great", Helvetica, sans-serif;
+    line-height: 50%;
+    top: 55%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font: normal 700% "Fredericka the Great", Helvetica, sans-serif;
+    line-height: 50%;
+    top: 50%;
+  }
+  h1 span.mini {
+    font: 100 34% "Fredericka the Great", Helvetica, sans-serif !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1 {
+    font: normal 550% "Fredericka the Great", Helvetica, sans-serif;
+    line-height: 45%;
+    top: 50%;
+  }
+  h1 span.mini {
+    font: 100 34% "Fredericka the Great", Helvetica, sans-serif !important;
+  }
+}

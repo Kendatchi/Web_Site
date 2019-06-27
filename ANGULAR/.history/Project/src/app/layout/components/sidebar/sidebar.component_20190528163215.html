@@ -1,0 +1,42 @@
+<nav
+  class="sidebar"
+  [ngClass]="{ sidebarPushRight: isActive, collapsed: collapsed }"
+>
+  <div class="list-group">
+    <a
+      routerLink="/dashboard"
+      [routerLinkActive]="['router-link']"
+      class="list-group-item"
+    >
+      <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+      <span>Onglet 1</span>
+    </a>
+
+    <a
+      routerLink="/board"
+      [routerLinkActive]="['router-link']"
+      class="list-group-item"
+    >
+      <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+      <span>Onglet 2</span>
+    </a>
+
+    <a
+      routerLink="/dashboard"
+      [routerLinkActive]="['router-link']"
+      class="list-group-item"
+    >
+      <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+      <span>Onglet 3</span>
+    </a>
+  </div>
+  <div
+    class="toggle-button"
+    [ngClass]="{ collapsed: collapsed }"
+    (click)="toggleCollapsed()"
+  >
+    <i class="fa fa-fw fa-angle-double-{{ collapsed ? 'right' : 'left' }}"></i
+    >&nbsp;
+    <span>{{ "Reduire" | translate }}</span>
+  </div>
+</nav>

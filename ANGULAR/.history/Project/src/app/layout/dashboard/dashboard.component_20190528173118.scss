@@ -1,0 +1,12 @@
+.test {
+  background-color: red;
+}
+
+.test2 {
+  margin: 5rem;
+}
+@media (min-width: 700px) and (max-resolution: 72dpi) {
+  .test2 {
+    margin: 0rem;
+  }
+}

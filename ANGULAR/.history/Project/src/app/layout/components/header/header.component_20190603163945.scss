@@ -1,0 +1,45 @@
+$topnav-background-color: #222;
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+* {
+  box-sizing: border-box;
+}
+
+:hover {
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+}
+&.lined.thick {
+  border: solid 7px #41403e;
+}
+&.dotted.thick {
+  border: dotted 5px #41403e;
+}
+&.dashed.thick {
+  border: dashed 5px #41403e;
+}
+&.lined.thin {
+  border: solid 2px #41403e;
+}
+&.dotted.thin {
+  border: dotted 2px #41403e;
+}
+&.dashed.thin {
+  border: dashed 2px #41403e;
+}
+
+@media (max-width: 620px) {
+  body {
+    h1 {
+      margin-top: 2rem;
+    }
+    & section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 1rem;
+      & button {
+        align-self: center;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

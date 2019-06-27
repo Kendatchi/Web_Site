@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* font-family: 'Do Hyeon', sans-serif;
+font-family: 'Lobster', cursive; */
+
+body, html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Do Hyeon', sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+/* header */
+.header {
+    background-color: #3C989E;
+    height: 70px;
+    line-height: 70px;
+  
+}
+
+.logo {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    float: left;
+}
+
+.menu{
+    float: right;
+}
+
+.menu a{
+    color: antiquewhite;
+    margin-right: 20px;
+}
+
+.menu a:hover{
+    color: #2C3E50
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.separator{
+    height: 3px;
+    width: 30%;
+    border: none;
+    box-shadow: none;
+    background-color:  #3C989E
+}
+
+/* bannière */
+.banner{
+    width: 100%;
+    max-width: 100%;
+}
+
+.ban{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.ban img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.inner-banner {
+    position: absolute;
+    top:5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 20px rgb(255, 255, 255)
+}
+
+.inner-banner h1{
+color: azure;
+}
+
+
+.inner-banner .btn-custon{
+    background-color:#3C989E;
+    color : white;
+}
+
+.inner-banner .btn-custon:hover{
+    background-color:rgb(26, 83, 87);
+   
+}
+/* about */
+#bebe{
+    text-align: center;
+}
+
+.bebe article {
+    margin-top: 5%;
+    
+}
+
+.bebe article h2{
+    text-align: center;
+}
+
+.bebe article p{
+    margin-top: 2rem;
+  
+}
+
+
+
+
+.bebe img{
+    width: 50%;
+    height:auto;
+    max-width: 50%;
+   margin-left: 25%;
+}
+
+/* portefolio */
+
+/* contact */
+
+.footer{
+  margin-left: auto;
+  margin-right: auto;
+}
+

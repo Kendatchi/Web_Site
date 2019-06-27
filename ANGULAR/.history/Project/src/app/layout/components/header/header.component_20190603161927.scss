@@ -1,0 +1,25 @@
+$topnav-background-color: #222;
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    top: 54px;
+    left: 0px;
+  }
+}
+@media print {
+  .sidebar {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .header-fields {
+    display: none;
+  }
+}
+
+.collapsed {
+  width: 60px;
+  span {
+    display: none;
+  }
+}

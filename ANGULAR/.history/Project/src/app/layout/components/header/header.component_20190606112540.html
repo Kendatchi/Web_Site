@@ -1,0 +1,94 @@
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="../../../../assets/particular/button/css/particles.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="../../../../assets/particular/button/css/base.css"
+/>
+<script>
+  document.documentElement.className = "js";
+  var supportsCssVars = function() {
+    var e,
+      t = document.createElement("style");
+    return (
+      (t.innerHTML = "root: { --tmp-var: bold; }"),
+      document.head.appendChild(t),
+      (e = !!(
+        window.CSS &&
+        window.CSS.supports &&
+        window.CSS.supports("font-weight", "var(--tmp-var)")
+      )),
+      t.parentNode.removeChild(t),
+      e
+    );
+  };
+  supportsCssVars() ||
+    alert(
+      "Please view this demo in a modern browser that supports CSS Variables."
+    );
+</script>
+
+<nav
+  class="navbar navbar-expand-lg navbar-dark py-lg-4 Sidebar"
+  id="mainNav"
+  [ngClass]="{ sidebarPushRight: isActive, collapsed: collapsed }"
+>
+  <a class="navbar-brand" href="#">Candice's Art</a>
+
+  <div class="collapse navbar-collapse list-group" id="navbarResponsive">
+    <div class="navbar-nav">
+      <a
+        class="lined_thick roll-in-left"
+        routerLink="/dashboard"
+        routerLinkActive="active"
+      >
+        <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+        <span>Accueil</span>
+      </a>
+      <a
+        class="dotted_thick roll-in-top"
+        [routerLink]="['/board']"
+        routerLinkActive="active"
+      >
+        <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;
+        <span>Sur la toile</span>
+      </a>
+      <a
+        class="dotted_thin roll-in-bottom"
+        [routerLink]="['/bonnet']"
+        routerLinkActive="active"
+      >
+        <i class="fa fa-fw fa-table"></i>&nbsp;
+        <span>Sortez couvert</span>
+      </a>
+      <!--roll-in-right-->
+    </div>
+  </div>
+  <!-- <div
+    class="toggle-button"
+    [ngClass]="{ collapsed: collapsed }"
+    (click)="toggleCollapsed()"
+  >
+    <i class="fa fa-fw fa-angle-double-{{ collapsed ? 'right' : 'left' }}"></i
+    >&nbsp;
+    <span>{{ "Reduire" | translate }}</span>
+  </div> -->
+</nav>
+
+<div class="grid">
+  <div class="grid__item theme-1">
+    <button class="action">
+      <svg class="icon icon--rewind">
+        <use xlink:href="#icon-rewind"></use>
+      </svg>
+    </button>
+    <button class="particles-button">Send</button>
+  </div>
+</div>
+
+<script src="../../../../assets/particular/button/js/anime.min.js"></script>
+<script src="../../../../assets/particular/button/js/particles.js"></script>
+<script src="../../../../assets/particular/button/js/demo.js"></script>

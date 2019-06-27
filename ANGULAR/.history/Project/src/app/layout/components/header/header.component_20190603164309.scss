@@ -1,0 +1,92 @@
+$topnav-background-color: #222;
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+:host {
+  .navbar {
+    background-color: $topnav-background-color;
+    .navbar-brand {
+      color: #fff;
+    }
+    .nav-item > a {
+      color: #999;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+$topnav-background-color: #222;
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    top: 54px;
+    left: 0px;
+  }
+}
+@media print {
+  .sidebar {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .header-fields {
+    display: none;
+  }
+}
+
+.collapsed {
+  width: 60px;
+  span {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  // padding:30px;
+  background: #222;
+  justify-content: center;
+  a {
+    color: white;
+    background: #222;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    &:hover {
+      &.lined.thick {
+        border: solid 7px #ffde9d;
+        color: white;
+        background: green;
+      }
+      &.dotted.thick {
+        border: dotted 5px #ffde9d;
+        color: white;
+        background: green;
+      }
+      &.dashed.thick {
+        border: dashed 5px #ffde9d;
+        color: white;
+        background: green;
+      }
+      .lined.thin {
+        border: solid 2px #ffde9d;
+        color: white;
+        background: green;
+      }
+      .dotted.thin {
+        border: dotted 2px #ffde9d;
+        color: white;
+        background: green;
+      }
+      .dashed.thin {
+        border: dashed 2px #ffde9d;
+        color: white;
+        background: green;
+      }
+    }
+    &.active {
+      background: rgba(255, 99, 99, 0.651);
+      color: white;
+    }
+  }
+}

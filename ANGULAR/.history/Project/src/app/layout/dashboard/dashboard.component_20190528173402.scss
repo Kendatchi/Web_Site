@@ -1,0 +1,12 @@
+.test {
+  background-color: red;
+}
+
+.test2 {
+  margin: 5rem;
+}
+@media (max-width: 600x) {
+  .test3 {
+    margin: 0rem;
+  }
+}

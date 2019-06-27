@@ -1,0 +1,15 @@
+.test {
+  background-color: red;
+}
+
+@media only screen and (min-width: 1024px) {
+  .test2 {
+    margin: 5rem;
+  }
+}
+
+@media (max-width: 600x) {
+  .test2 {
+    margin: 0rem;
+  }
+}

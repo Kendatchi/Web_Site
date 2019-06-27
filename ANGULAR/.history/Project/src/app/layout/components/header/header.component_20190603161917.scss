@@ -1,0 +1,51 @@
+$topnav-background-color: #222;
+
+.nested-menu {
+  .list-group-item {
+    cursor: pointer;
+  }
+  .nested {
+    list-style-type: none;
+  }
+  ul.submenu {
+    display: none;
+    height: 0;
+  }
+  & .expand {
+    ul.submenu {
+      display: block;
+      list-style-type: none;
+      height: auto;
+      li {
+        a {
+          color: #fff;
+          padding: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .sidebar {
+    top: 54px;
+    left: 0px;
+  }
+}
+@media print {
+  .sidebar {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .header-fields {
+    display: none;
+  }
+}
+
+.collapsed {
+  width: 60px;
+  span {
+    display: none;
+  }
+}
