@@ -1,0 +1,62 @@
+.center{
+  text-align: center;
+  color: blue;
+}
+
+h4{
+  color: red;
+}
+
+
+/* --------------------POUR LE MENU 3-------------------*/
+
+/*Style pour juste enlever les puces*/
+#navigation{
+  list-style: none;
+}
+
+/* --------------------POUR LE MENU 4-------------------*/
+/*Style pour creer les contours des boutton */
+/*ATTENTION A LA CONSTRUCTION DU CSS*/
+#navigation_2 {
+  list-style: none;
+
+}
+#navigation_2 li a{         /*ICI ON CIBLE BIEN LES BOUTONS SITUER DANS LA BALISE A : LES BOUTTON CE TROUVE BIEN DANS NAVIGATION => LI => A*/
+  display: block ;
+  background: green ;
+  color: #fff ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
+}
+
+/* --------------------POUR LE MENU 5-------------------*/
+#navigation_3 {
+  list-style: none;
+
+}
+
+#navigation_3 li a{         /* POUR ALLER PLUS VITE ON REPREND LE CODE DU DESSUS EN MODIFIANT BIEN LE NOM : navigation_3 */
+  display: block ;
+  background: green ;
+  color: #fff ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
+}
+
+/* ICI on va preciser qu'on veut une annimation des que la souris passe sur le boutton pour sa on va utiliser de type hover
+   dans un premier temps on va mettre une annimation sur le bouton lorsque la sourie passe sur le boutton pour cela on va utiliser le hover
+      vu que c'est sur la balise <a> on va donc ecrire #navigation_3 li a:hover
+*/
+
+#navigation_3 li a:hover{
+  background: yellow ;
+  text-decoration: underline ;
+  color: black;
+}
