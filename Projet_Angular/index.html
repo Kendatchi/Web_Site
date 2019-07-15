@@ -12,10 +12,10 @@
     <option value="username">Organiser par nom</option>
     <option value="content">Organiser par contenu</option>
   </select>
-  <div ng-init="commnet=[{username :'Alex', content:'Salut les gens'},{username :'Xavier',content:'Je suis content'},{ username :'Patrick',content:'firt'}]">
+  <div ng-init="users=[{username :'Alex', content:'Salut les gens'},{username :'Xavier',content:'Je suis content'},{ username :'Patrick',content:'firt'}]">
 
 
-      <div ng-repeat="nom in commnet | filter:query | orderBy :order">
+      <div ng-repeat="nom in users | filter:query | orderBy :order">
       <p>
         <strong>{{nom.username}}</strong><br>
         {{nom.content}}
